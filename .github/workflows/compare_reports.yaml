@@ -42,7 +42,7 @@ jobs:
       env:
         WANDB_ENTITY: leandro-bello
         WANDB_PROJECT: cicd-quickstart
-        BASELINE_TAG: latest
+        BASELINE_TAG: baseline
         RUN_ID: "${{ steps.get-runid-value.outputs.RUN_ID }}"
         WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
 
