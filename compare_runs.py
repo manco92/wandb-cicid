@@ -8,7 +8,7 @@ def get_baseline_run(entity='leandro-bello', project='cicd-quickstart', tag='bas
 
     api = wandb.Api()
     runs=api.runs(f'{entity}/{project}', {"tags": {"$in": [tag]}})
-    print(tag)
+    print(runs)
     assert len(runs) == 1, 'There must be exactly one run with the tag "baseline"'
     return runs[0]
 
